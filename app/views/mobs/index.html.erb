@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Race</th>
+      <th>Type</th>
+      <th>Resist</th>
+      <th>Immune</th>
+      <th>Attack</th>
+      <th>Dmg</th>
+      <th>Str</th>
+      <th>Dex</th>
+      <th>Con</th>
+      <th>Int</th>
+      <th>Wis</th>
+      <th>Cha</th>
+      <th>Strsv</th>
+      <th>Dexsv</th>
+      <th>Consv</th>
+      <th>Intsv</th>
+      <th>Wissv</th>
+      <th>Chasv</th>
+      <th>Init</th>
+      <th>Ac</th>
+      <th>Passins</th>
+      <th>Passperc</th>
+      <th>Passinv</th>
+      <th>Profbonus</th>
+      <th>Spells</th>
+      <th>Hp</th>
+      <th>Cr</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mobs.each do |mob| %>
+      <tr>
+        <td><%= mob.name %></td>
+        <td><%= mob.race %></td>
+        <td><%= mob.type %></td>
+        <td><%= mob.resist %></td>
+        <td><%= mob.immune %></td>
+        <td><%= mob.attack %></td>
+        <td><%= mob.dmg %></td>
+        <td><%= mob.str %></td>
+        <td><%= mob.dex %></td>
+        <td><%= mob.con %></td>
+        <td><%= mob.int %></td>
+        <td><%= mob.wis %></td>
+        <td><%= mob.cha %></td>
+        <td><%= mob.strsv %></td>
+        <td><%= mob.dexsv %></td>
+        <td><%= mob.consv %></td>
+        <td><%= mob.intsv %></td>
+        <td><%= mob.wissv %></td>
+        <td><%= mob.chasv %></td>
+        <td><%= mob.init %></td>
+        <td><%= mob.ac %></td>
+        <td><%= mob.passins %></td>
+        <td><%= mob.passperc %></td>
+        <td><%= mob.passinv %></td>
+        <td><%= mob.profbonus %></td>
+        <td><%= mob.spells %></td>
+        <td><%= mob.hp %></td>
+        <td><%= mob.cr %></td>
+        <td><%= link_to 'Show', mob %></td>
+        <td><%= link_to 'Edit', edit_mob_path(mob) %></td>
+        <td><%= link_to 'Destroy', mob, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mob', new_mob_path %>

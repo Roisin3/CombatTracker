@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Players</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Race</th>
+      <th>Str</th>
+      <th>Dex</th>
+      <th>Con</th>
+      <th>Int</th>
+      <th>Wis</th>
+      <th>Cha</th>
+      <th>Strsv</th>
+      <th>Dexsv</th>
+      <th>Consv</th>
+      <th>Intsv</th>
+      <th>Wissv</th>
+      <th>Chasv</th>
+      <th>Init</th>
+      <th>Ac</th>
+      <th>Passins</th>
+      <th>Passperc</th>
+      <th>Passinv</th>
+      <th>Profbonus</th>
+      <th>Spells</th>
+      <th>Hp</th>
+      <th>Lvl</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.name %></td>
+        <td><%= player.race %></td>
+        <td><%= player.str %></td>
+        <td><%= player.dex %></td>
+        <td><%= player.con %></td>
+        <td><%= player.int %></td>
+        <td><%= player.wis %></td>
+        <td><%= player.cha %></td>
+        <td><%= player.strsv %></td>
+        <td><%= player.dexsv %></td>
+        <td><%= player.consv %></td>
+        <td><%= player.intsv %></td>
+        <td><%= player.wissv %></td>
+        <td><%= player.chasv %></td>
+        <td><%= player.init %></td>
+        <td><%= player.ac %></td>
+        <td><%= player.passins %></td>
+        <td><%= player.passperc %></td>
+        <td><%= player.passinv %></td>
+        <td><%= player.profbonus %></td>
+        <td><%= player.spells %></td>
+        <td><%= player.hp %></td>
+        <td><%= player.lvl %></td>
+        <td><%= link_to 'Show', player %></td>
+        <td><%= link_to 'Edit', edit_player_path(player) %></td>
+        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player', new_player_path %>

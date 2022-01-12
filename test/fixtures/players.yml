@@ -1,0 +1,51 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  race: MyString
+  str: 1
+  dex: 1
+  con: 1
+  int: 1
+  wis: 1
+  cha: 1
+  strsv: 1
+  dexsv: 1
+  consv: 1
+  intsv: 1
+  wissv: 1
+  chasv: 1
+  init: 1
+  ac: 1
+  passins: 1
+  passperc: 1
+  passinv: 1
+  profbonus: 1
+  spells: MyText
+  hp: 1
+  lvl: 1
+
+two:
+  name: MyString
+  race: MyString
+  str: 1
+  dex: 1
+  con: 1
+  int: 1
+  wis: 1
+  cha: 1
+  strsv: 1
+  dexsv: 1
+  consv: 1
+  intsv: 1
+  wissv: 1
+  chasv: 1
+  init: 1
+  ac: 1
+  passins: 1
+  passperc: 1
+  passinv: 1
+  profbonus: 1
+  spells: MyText
+  hp: 1
+  lvl: 1

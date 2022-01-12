@@ -1,0 +1,132 @@
+<%= form_with(model: player, local: true) do |form| %>
+  <% if player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+        <% player.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race %>
+    <%= form.text_field :race %>
+  </div>
+
+  <div class="field">
+    <%= form.label :str %>
+    <%= form.number_field :str %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dex %>
+    <%= form.number_field :dex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :con %>
+    <%= form.number_field :con %>
+  </div>
+
+  <div class="field">
+    <%= form.label :int %>
+    <%= form.number_field :int %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wis %>
+    <%= form.number_field :wis %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cha %>
+    <%= form.number_field :cha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :strsv %>
+    <%= form.number_field :strsv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dexsv %>
+    <%= form.number_field :dexsv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :consv %>
+    <%= form.number_field :consv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :intsv %>
+    <%= form.number_field :intsv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wissv %>
+    <%= form.number_field :wissv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chasv %>
+    <%= form.number_field :chasv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :init %>
+    <%= form.number_field :init %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ac %>
+    <%= form.number_field :ac %>
+  </div>
+
+  <div class="field">
+    <%= form.label :passins %>
+    <%= form.number_field :passins %>
+  </div>
+
+  <div class="field">
+    <%= form.label :passperc %>
+    <%= form.number_field :passperc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :passinv %>
+    <%= form.number_field :passinv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profbonus %>
+    <%= form.number_field :profbonus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spells %>
+    <%= form.text_area :spells %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hp %>
+    <%= form.number_field :hp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lvl %>
+    <%= form.number_field :lvl %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
